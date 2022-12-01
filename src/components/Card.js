@@ -1,7 +1,7 @@
 import { click } from "@testing-library/user-event/dist/click";
 import { isCompositeComponentWithType } from "react-dom/test-utils";
 
-function Card(props) {
+export function Card(props) {
     return (
         <div className="card">
             <h2>{props.h2}</h2>
@@ -10,13 +10,13 @@ function Card(props) {
     );
 };
 
-function Btn() {
+export function Btn() {
     let clickHandler = () => {
 
     }
 
 }
-function Btn2() {
+export function Btn2() {
 
     const handleClick = () => {
         let randomNum = Math.floor(Math.random() * 3) + 1;
@@ -53,7 +53,3 @@ export function ModeToggler() {
         </div>
     )
 }
-
-export { Btn };
-export { Btn2 };
-export default Card;
