@@ -9,14 +9,31 @@ function Card(props) {
     );
 };
 
-function Btn(){
-    let clickHandler = ()=>{
-        console.log('Mouse hover')
-    } 
-    return(
-        <button onMouseOver={clickHandler} > Click me </button>
+function Btn() {
+    let clickHandler = () => {
+
+    }
+
+}
+
+export function ModeToggler() {
+    let lightModeOn = true;
+    const lightMode = <h1>Light Mode on</h1>
+    const darkMode = <h1>Dark Mode on</h1>
+
+    function clickHandler(){
+        lightModeOn = !lightModeOn;
+        lightModeOn ? console.log('light') : console.log('Dark');
+    }
+
+    return (
+        <div>
+            {lightModeOn ? lightMode : darkMode}
+            <button onClick={clickHandler} > Click me </button>
+
+        </div>
     )
 }
 
-export {Btn};
+export { Btn };
 export default Card;
