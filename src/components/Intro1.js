@@ -9,5 +9,5 @@ function Intro1(){
         </div>
     );
 };
-
+ 
 export default Intro1;

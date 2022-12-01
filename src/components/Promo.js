@@ -9,4 +9,4 @@ function Promo(){
     </div>
 }
 
-export default Promo;
+export default Promo; 

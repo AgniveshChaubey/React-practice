@@ -7,11 +7,11 @@ import Card from './components/Card';
 import Main from './components/Main';
 
 function App(props) {
-  return (
+  return (  
     <div className='App'>
       {/* <Heading firstName='Agnii!' /> */}
       {/* <Heading firstName='Rahul'/> */}
-      <h1>
+      <h1> 
         {/* {"Task: Add a button and handle a click event!"} */}
       </h1>
       {/* <RegisterForm />

@@ -6,7 +6,7 @@ export function RegisterForm() {
         lastName: 'Chaubey',
         email: 'agn@gmail.com',
     });
-
+ 
     function handleChange(e) {
         setForm({ ...form, fiestName: e.target.value });
     };
