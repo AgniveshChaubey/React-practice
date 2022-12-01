@@ -1,7 +1,7 @@
 import './App.css';
 import {Btn, Btn2} from './components/Card';
 import { ModeToggler } from './components/Card';
-
+import { InputFunction } from './components/InputFunction'; 
 import Heading from './components/Heading';
 import Card from './components/Card';
 
@@ -14,6 +14,7 @@ function App(props) {
       {"Task: Add a button and handle a click event!"}
       </h1>
       <Btn2 />
+      <InputFunction />
       <Card h2="First card's h2" h3= "First card's h3" />
       <Btn />
       <ModeToggler />
