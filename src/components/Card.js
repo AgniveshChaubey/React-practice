@@ -11,10 +11,10 @@ function Card(props) {
 
 function Btn(){
     let clickHandler = ()=>{
-        console.log('Button clicked')
+        console.log('Mouse hover')
     } 
     return(
-        <button onClick={clickHandler} > Click me </button>
+        <button onMouseOver={clickHandler} > Click me </button>
     )
 }
 
