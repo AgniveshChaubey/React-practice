@@ -1,5 +1,5 @@
 import './App.css';
-import {Btn} from './components/Card';
+import {Btn, Btn2} from './components/Card';
 import { ModeToggler } from './components/Card';
 
 import Heading from './components/Heading';
@@ -11,8 +11,9 @@ function App(props) {
       <Heading firstName='Agnii!' />
       {/* <Heading firstName='Rahul'/> */}
       <h1>
-      {"Task: Add a button and a apply a click listner to it!"}
+      {"Task: Add a button and handle a click event!"}
       </h1>
+      <Btn2 />
       <Card h2="First card's h2" h3= "First card's h3" />
       <Btn />
       <ModeToggler />
