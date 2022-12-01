@@ -1,3 +1,5 @@
+import { click } from "@testing-library/user-event/dist/click";
+
 function Card(props) {
     return (
         <div className="card">
@@ -7,4 +9,14 @@ function Card(props) {
     );
 };
 
+function Btn(){
+    let clickHandler = ()=>{
+        console.log('Button clicked')
+    } 
+    return(
+        <button onClick={clickHandler} > Click me </button>
+    )
+}
+
+export {Btn};
 export default Card;
