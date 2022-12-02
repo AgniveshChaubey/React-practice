@@ -29,7 +29,7 @@ function App(props) {
     "https://upload.wikimedia.org/wikipedia/commons/b/b5/Hydroprogne_caspia_-_Caspian_Tern_XC432881.mp3"
   );
 
-  function toddle1() {
+  function toggle1() {
     if (bird1.paused) {
       bird1.play();
     }
@@ -52,12 +52,13 @@ function App(props) {
     <div className='App'>
 
 
-
+      <button onClick={toggle1}>Bird1</button>
+      <button onClick={toggle2}>Bird2</button>
 
 
       {/* <Heading firstName='Agnii!' /> */}
       {/* <Heading firstName='Rahul'/> */}
-      <h1>{"Task: Where should the state go?"}</h1>
+      <h1>{"Task: Audio playing/pausing"}</h1>
       {/* <Fruits fruits={fruits} />
       <FruitsCounter fruits = {fruits} /> */}
       {/* <RegisterForm /> */}
