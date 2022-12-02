@@ -9,6 +9,7 @@ import Main from './components/Main';
 import { Fruits, FruitsCounter } from './components/Fruits';
 import React from 'react';
 import { Intro1, Intro2, Intro3 } from './components/Intro';
+import profilePic from './assets/images/profile_pic.png'
 
 function App(props) {
 
@@ -25,7 +26,7 @@ function App(props) {
     <div className='App'>
 
 
-      
+
 
 
       {/* <Heading firstName='Agnii!' /> */}
@@ -60,6 +61,14 @@ function App(props) {
       </Routes> */}
 
 
+      <img
+        height={200}
+        src={profilePic}
+      />
+      <img
+        height={200}
+        src={require("./assets/images/aaaa.png")}
+      />
 
 
     </div>
