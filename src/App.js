@@ -1,4 +1,5 @@
 import './App.css';
+import { Route, Routes, Link } from 'react-router-dom';
 import { Btn, Btn2 } from './components/Card';
 import { ModeToggler } from './components/Card';
 import { RegisterForm, TextInputWithFocusButton } from './components/InputFunction';
@@ -7,6 +8,7 @@ import Heading from './components/Heading';
 import Main from './components/Main';
 import { Fruits, FruitsCounter } from './components/Fruits';
 import React from 'react';
+import { Intro1, Intro2, Intro3 } from './components/Intro';
 
 function App(props) {
 
@@ -18,13 +20,15 @@ function App(props) {
 
   return (
     <div className='App'>
+      <nav>
+        <Link to="/" className="nav-item" >Home</Link>
+        <Link to="/intro1" className="nav-item" >Intro1</Link>
+      </nav>
       {/* <Heading firstName='Agnii!' /> */}
       {/* <Heading firstName='Rahul'/> */}
-      <h1>
-        {"Task: Where should the state go?"}
-      </h1>
-      <Fruits fruits={fruits} />
-      <FruitsCounter fruits = {fruits} />
+      <h1>{"Task: Where should the state go?"}</h1>
+      {/* <Fruits fruits={fruits} />
+      <FruitsCounter fruits = {fruits} /> */}
       {/* <RegisterForm /> */}
       {/* <TextInputWithFocusButton /> */}
       {/* <Btn2 /> */}
@@ -35,6 +39,12 @@ function App(props) {
       {/* <Main msg="I passed through the Header and the Wrapper and I reached the Button component" /> */}
       {/* <Card h2="Second card's h2" h3="Senond card's h3" /> */}
       {/* <Card h2="Third card's h2" h3="Third card's h3" /> */}
+      <Routes>
+        <Route path="/" element={<Intro1 />} />
+        <Route path="/intro1" element={<Intro1 />} />
+        <Route path="/intro2" element={<Intro2 />} />
+        <Route path="/intro3" element={<Intro3 />} />
+      </Routes>
     </div>
   );
 };
