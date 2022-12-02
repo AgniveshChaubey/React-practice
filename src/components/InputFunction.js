@@ -8,7 +8,7 @@ export function RegisterForm() {
     });
  
     function handleChange(e) {
-        setForm({ ...form, fiestName: e.target.value });
+        setForm({ ...form, firstName: e.target.value });
     };
 
     return (

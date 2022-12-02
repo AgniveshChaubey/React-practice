@@ -18,12 +18,16 @@ function App(props) {
     { fruitName: 'plum', id: 3 },
   ]);
 
+  function handleChange() {
+
+  }
   return (
     <div className='App'>
-      <nav>
-        <Link to="/" className="nav-item" >Home</Link>
-        <Link to="/intro1" className="nav-item" >Intro1</Link>
-      </nav>
+
+
+      
+
+
       {/* <Heading firstName='Agnii!' /> */}
       {/* <Heading firstName='Rahul'/> */}
       <h1>{"Task: Where should the state go?"}</h1>
@@ -39,12 +43,25 @@ function App(props) {
       {/* <Main msg="I passed through the Header and the Wrapper and I reached the Button component" /> */}
       {/* <Card h2="Second card's h2" h3="Senond card's h3" /> */}
       {/* <Card h2="Third card's h2" h3="Third card's h3" /> */}
+
+
+
+
+      {/*    <nav style={{backgroundColor : "", text : "bold"}}>
+        <Link to="/intro1" className="nav-item" >Intro1</Link>
+        <Link to="/intro2" className="nav-item" >intro2</Link>
+        <Link to="/intro3" className="nav-item" >Intro3</Link>
+      </nav>
       <Routes>
         <Route path="/" element={<Intro1 />} />
         <Route path="/intro1" element={<Intro1 />} />
         <Route path="/intro2" element={<Intro2 />} />
         <Route path="/intro3" element={<Intro3 />} />
-      </Routes>
+      </Routes> */}
+
+
+
+
     </div>
   );
 };
