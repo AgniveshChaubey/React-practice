@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 import { Route, Routes, Link } from 'react-router-dom';
 import { Btn, Btn2 } from './components/Card';
@@ -7,9 +8,10 @@ import Heading from './components/Heading';
 // import Card from './components/Card';
 import Main from './components/Main';
 import { Fruits, FruitsCounter } from './components/Fruits';
-import React from 'react';
 import { Intro1, Intro2, Intro3 } from './components/Intro';
+
 import profilePic from './assets/images/profile_pic.png'
+import ReactPlayer from 'react-player/youtube';
 
 function App(props) {
 
@@ -61,15 +63,18 @@ function App(props) {
       </Routes> */}
 
 
-      <img
+      {/* <img
         height={200}
         src={profilePic}
       />
       <img
         height={200}
         src={require("./assets/images/aaaa.png")}
-      />
+      /> */}
 
+      
+
+      <ReactPlayer url={'https://www.youtube.com/watch?v=3GsA60QpJz0'} />
 
     </div>
   );
