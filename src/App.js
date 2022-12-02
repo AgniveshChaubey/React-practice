@@ -72,9 +72,14 @@ function App(props) {
         src={require("./assets/images/aaaa.png")}
       /> */}
 
-      
 
-      <ReactPlayer url={'https://www.youtube.com/watch?v=3GsA60QpJz0'} />
+
+      {/* <ReactPlayer
+        playing={true}
+        volume={.1}
+        url={'https://www.youtube.com/watch?v=3GsA60QpJz0'}
+
+      /> */}
 
     </div>
   );
