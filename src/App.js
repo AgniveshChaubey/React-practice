@@ -49,10 +49,12 @@ function App(props) {
 
 
   return (
+
+    const myBtn ={
+      
+    }
     <div className='App'>
-
-
-      <button onClick={toggle1}>Bird1</button>
+      <button style={myBtn} onClick={toggle1}>Bird1</button>
       <button onClick={toggle2}>Bird2</button>
 
 
