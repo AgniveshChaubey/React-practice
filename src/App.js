@@ -50,12 +50,9 @@ function App(props) {
 
   return (
 
-    const myBtn ={
-      
-    }
     <div className='App'>
-      <button style={myBtn} onClick={toggle1}>Bird1</button>
-      <button onClick={toggle2}>Bird2</button>
+      <button className='mr-3 text-dark btn btn-outline-danger' onClick={toggle1}>Bird1</button>
+      <button className='text-dark btn btn-outline-danger' onClick={toggle2}>Bird2</button>
 
 
       {/* <Heading firstName='Agnii!' /> */}
